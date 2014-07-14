@@ -1,0 +1,2 @@
+    <uses-sdk
+     android:targetSdkVersion="17" />

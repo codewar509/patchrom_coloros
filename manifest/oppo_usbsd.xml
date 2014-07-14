@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 1 swap表示internalsd和externalsd是否交换挂载 是为true
+		 2 internalsd 表示通过vold配置挂载的内部存储挂载点
+		 3 internalsd 表示通过vold配置挂载的外部存储挂载点
+		 4 otgpath 标签可以添加多个，通过dumpsys mount可以查看出所有otg挂载点
+		
+		eg1：
+<oppo-usb>
+	<swap>false</swap>	
+	<internalsd>/storage/sdcard0</internalsd>
+	<externalsd>/storage/sdcard1</externalsd>
+	<otgpath>/storage/udiskA</otgpath>
+	<otgpath>/storage/udiskB</otgpath>	
+</oppo-usb>
+
+   eg2:
+<oppo-usb>
+	<swap>false</swap>	
+	<internalsd>/storage/emulated/0</internalsd>	
+	<otgpath>/storage/udisk</otgpath>		
+</oppo-usb>
+		 
+		 -->
+<oppo-usb>
+	<swap></swap>	
+	<internalsd></internalsd>
+	<externalsd></externalsd>
+	<otgpath></otgpath>	
+</oppo-usb>
